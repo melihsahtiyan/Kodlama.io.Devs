@@ -21,10 +21,10 @@ namespace Persistence.Contexts
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //if (!optionsBuilder.IsConfigured)
-            //    base.OnConfiguring(
-            //        optionsBuilder.UseSqlServer(Configuration.
-            //            GetConnectionString("KodlamaioDevsConnectionString")));
+            if (!optionsBuilder.IsConfigured)
+                base.OnConfiguring(
+                    optionsBuilder.UseSqlServer(Configuration.
+                       GetConnectionString("KodlamaioDevsConnectionString")));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

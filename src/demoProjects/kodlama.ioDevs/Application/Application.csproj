@@ -26,11 +26,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Features\Languages\Constants\" />
-	  <Folder Include="Features\Languages\Models\" />
-	  <Folder Include="Features\Languages\Queries\GetByIdLanguage\" />
-	  <Folder Include="Features\Languages\Queries\NewFolder\" />
-	  <Folder Include="Features\Languages\Rules\" />
-	  <Folder Include="Features\Languages\Profiles\" />
 	</ItemGroup>
 
 </Project>
