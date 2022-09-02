@@ -7,29 +7,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D0854A8-C5C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "corePackages", "{219D2F95-86EB-426B-80D3-C8F825A393CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "src\corePackages\Core.Application\Core.Application.csproj", "{03B57AF8-BC7B-470C-B276-5454B8077BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "src\corePackages\Core.Persistence\Core.Persistence.csproj", "{326AB197-873B-4912-B9CA-423CE0B76173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "src\corePackages\Core.Persistence\Core.Persistence.csproj", "{326AB197-873B-4912-B9CA-423CE0B76173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcers", "src\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcers.csproj", "{38728499-EC25-4E21-8C8C-61AF65D96EFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCuttingConcers", "src\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcers.csproj", "{38728499-EC25-4E21-8C8C-61AF65D96EFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.ElasticSearch", "src\corePackages\Core.ElasticSearch\Core.ElasticSearch.csproj", "{E874D0C6-DAE9-4B26-9A2B-7DF1F60A22A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.ElasticSearch", "src\corePackages\Core.ElasticSearch\Core.ElasticSearch.csproj", "{E874D0C6-DAE9-4B26-9A2B-7DF1F60A22A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Mailing", "src\corePackages\Core.Mailing\Core.Mailing.csproj", "{B9714CC9-7CC2-4C89-AF4F-5C89DE505C03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Mailing", "src\corePackages\Core.Mailing\Core.Mailing.csproj", "{B9714CC9-7CC2-4C89-AF4F-5C89DE505C03}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Security", "src\corePackages\Core.Security\Core.Security.csproj", "{A2456BEF-569C-42F9-B6AA-F0E9737DC5AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Security", "src\corePackages\Core.Security\Core.Security.csproj", "{A2456BEF-569C-42F9-B6AA-F0E9737DC5AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demoProjects", "demoProjects", "{7BAFA758-86D3-4C14-91A0-3CEC47E2F764}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kodlama.ioDevs", "kodlama.ioDevs", "{DA16A514-095B-4A96-BDEE-352D8FF86B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\demoProjects\kodlama.ioDevs\Application\Application.csproj", "{5AF3C647-E0EC-4B24-A4A4-72B3CD0161A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\demoProjects\kodlama.ioDevs\Application\Application.csproj", "{5AF3C647-E0EC-4B24-A4A4-72B3CD0161A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\demoProjects\kodlama.ioDevs\Domain\Domain.csproj", "{BDB34BB6-F9F6-4159-88FF-75AE18AD9061}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\demoProjects\kodlama.ioDevs\Domain\Domain.csproj", "{BDB34BB6-F9F6-4159-88FF-75AE18AD9061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "src\demoProjects\kodlama.ioDevs\Persistence\Persistence.csproj", "{367F49E7-083F-4484-B273-FE28E863ACCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\demoProjects\kodlama.ioDevs\Persistence\Persistence.csproj", "{367F49E7-083F-4484-B273-FE28E863ACCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\demoProjects\kodlama.ioDevs\Infrastructure\Infrastructure.csproj", "{F995332A-086D-40ED-861A-FE343B3D9A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\demoProjects\kodlama.ioDevs\Infrastructure\Infrastructure.csproj", "{F995332A-086D-40ED-861A-FE343B3D9A0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application", "src\corePackages\Core.Application\Core.Application.csproj", "{6FF269DB-63F7-49ED-BF69-7F23F727B3E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\demoProjects\kodlama.ioDevs\WebApi\WebApi.csproj", "{A0DE1064-94AB-475D-AF1E-9573F1F33708}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03B57AF8-BC7B-470C-B276-5454B8077BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03B57AF8-BC7B-470C-B276-5454B8077BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03B57AF8-BC7B-470C-B276-5454B8077BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03B57AF8-BC7B-470C-B276-5454B8077BEB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{326AB197-873B-4912-B9CA-423CE0B76173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{326AB197-873B-4912-B9CA-423CE0B76173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326AB197-873B-4912-B9CA-423CE0B76173}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,13 +75,20 @@ Global
 		{F995332A-086D-40ED-861A-FE343B3D9A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F995332A-086D-40ED-861A-FE343B3D9A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F995332A-086D-40ED-861A-FE343B3D9A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF269DB-63F7-49ED-BF69-7F23F727B3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF269DB-63F7-49ED-BF69-7F23F727B3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF269DB-63F7-49ED-BF69-7F23F727B3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF269DB-63F7-49ED-BF69-7F23F727B3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DE1064-94AB-475D-AF1E-9573F1F33708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DE1064-94AB-475D-AF1E-9573F1F33708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DE1064-94AB-475D-AF1E-9573F1F33708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DE1064-94AB-475D-AF1E-9573F1F33708}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{219D2F95-86EB-426B-80D3-C8F825A393CF} = {3D0854A8-C5CE-4FA5-816A-A7A2BE48B274}
-		{03B57AF8-BC7B-470C-B276-5454B8077BEB} = {219D2F95-86EB-426B-80D3-C8F825A393CF}
 		{326AB197-873B-4912-B9CA-423CE0B76173} = {219D2F95-86EB-426B-80D3-C8F825A393CF}
 		{38728499-EC25-4E21-8C8C-61AF65D96EFD} = {219D2F95-86EB-426B-80D3-C8F825A393CF}
 		{E874D0C6-DAE9-4B26-9A2B-7DF1F60A22A9} = {219D2F95-86EB-426B-80D3-C8F825A393CF}
@@ -95,6 +100,8 @@ Global
 		{BDB34BB6-F9F6-4159-88FF-75AE18AD9061} = {DA16A514-095B-4A96-BDEE-352D8FF86B78}
 		{367F49E7-083F-4484-B273-FE28E863ACCA} = {DA16A514-095B-4A96-BDEE-352D8FF86B78}
 		{F995332A-086D-40ED-861A-FE343B3D9A0E} = {DA16A514-095B-4A96-BDEE-352D8FF86B78}
+		{6FF269DB-63F7-49ED-BF69-7F23F727B3E5} = {219D2F95-86EB-426B-80D3-C8F825A393CF}
+		{A0DE1064-94AB-475D-AF1E-9573F1F33708} = {DA16A514-095B-4A96-BDEE-352D8FF86B78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF9E59F2-4EC9-4139-9C89-686DD1E0369F}

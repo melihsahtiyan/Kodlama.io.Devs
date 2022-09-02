@@ -1,4 +1,4 @@
-﻿namespace Core.CrossCuttingConcerns.Exceptions;
+﻿namespace Core.CrossCuttingConcers.Exceptions;
 
 public class AuthorizationException : Exception
 {

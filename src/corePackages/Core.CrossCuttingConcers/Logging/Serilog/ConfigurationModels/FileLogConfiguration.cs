@@ -1,4 +1,4 @@
-﻿namespace Core.CrossCuttingConcerns.Logging.Serilog.ConfigurationModels;
+﻿namespace Core.CrossCuttingConcers.Logging.Serilog.ConfigurationModels;
 
 public class FileLogConfiguration
 {

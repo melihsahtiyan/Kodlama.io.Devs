@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace Core.CrossCuttingConcerns.Exceptions;
+namespace Core.CrossCuttingConcers.Exceptions;
 
 public class AuthorizationProblemDetails : ProblemDetails
 {

@@ -1,9 +1,36 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Features\Brands\**" />
+	  <EmbeddedResource Remove="Features\Brands\**" />
+	  <None Remove="Features\Brands\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.1" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
+		<ProjectReference Include="..\..\..\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcers.csproj" />
+		<ProjectReference Include="..\Domain\Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Features\Languages\Constants\" />
+	  <Folder Include="Features\Languages\Models\" />
+	  <Folder Include="Features\Languages\Queries\GetByIdLanguage\" />
+	  <Folder Include="Features\Languages\Queries\NewFolder\" />
+	  <Folder Include="Features\Languages\Rules\" />
+	  <Folder Include="Features\Languages\Profiles\" />
+	</ItemGroup>
 
 </Project>

@@ -1,9 +1,10 @@
-﻿using FluentValidation;
+﻿using Core.CrossCuttingConcers.Exceptions;
+using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace Core.CrossCuttingConcerns.Exceptions;
+namespace Core.CrossCuttingConcers.Exceptions;
 
 public class ExceptionMiddleware
 {
