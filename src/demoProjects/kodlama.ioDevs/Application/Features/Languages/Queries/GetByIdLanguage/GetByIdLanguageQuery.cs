@@ -30,9 +30,9 @@ namespace Application.Features.Languages.Queries.GetByIdLanguage
             {
                 Language language = await _languageRepository.GetAsync(l => l.Id == request.Id);
 
-                LanguageGetByIdDto result= _mapper.Map<LanguageGetByIdDto>(language);
+                LanguageGetByIdDto languageGetByIdDto= _mapper.Map<LanguageGetByIdDto>(language);
 
-                return result;
+                return languageGetByIdDto;
             }
         }
     }

@@ -24,5 +24,12 @@ namespace Application.Features.Languages.Rules
             IPaginate<Language> result = await _languageRepository.GetListAsync(l => l.Name == name);
             if (result.Items.Any()) throw new BusinessException("Language name exists");
         }
+
+        public async Task LanguageShouldExistWhenRequested(Language language)
+        {   
+            Language? result = await _languageRepository.GetAsync(l => l.Id == language.Id);
+
+            if (result == null) throw new BusinessException("Language does not exists");
+        }
     }
 }
