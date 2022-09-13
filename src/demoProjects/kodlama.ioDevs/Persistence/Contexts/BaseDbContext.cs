@@ -84,14 +84,14 @@ namespace Persistence.Contexts
                 a.ToTable("OperationClaims").HasKey(k => k.Id);
                 a.Property(o => o.Id).HasColumnName("Id");
                 a.Property(o => o.Name).HasColumnName("Name");
-
+                a.HasMany(u => u.UserOperationClaims);
             });
             
             modelBuilder.Entity<OtpAuthenticator>(a =>
             {
                 a.ToTable("OtpAuthenticators").HasKey(k => k.Id);
                 a.Property(o => o.Id).HasColumnName("Id");
-                a.Property(r => r.UserId).HasColumnName("UserId");
+                a.Property(o => o.UserId).HasColumnName("UserId");
                 a.Property(o => o.SecretKey).HasColumnName("SecretKey");
                 a.Property(o => o.IsVerified).HasColumnName("IsVerified");
                 a.HasOne(o => o.User);
@@ -109,7 +109,7 @@ namespace Persistence.Contexts
             
             modelBuilder.Entity<RefreshToken>(a =>
             {
-                a.ToTable("OperationClaims").HasKey(k => k.Id);
+                a.ToTable("RefreshTokens").HasKey(k => k.Id);
                 a.Property(r => r.Id).HasColumnName("Id");
                 a.Property(r => r.UserId).HasColumnName("UserId");
                 a.Property(r => r.Token).HasColumnName("Token");
