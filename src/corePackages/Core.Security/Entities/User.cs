@@ -12,7 +12,6 @@ public class User : Entity
     public byte[] PasswordHash { get; set; }
     public bool Status { get; set; }
     public AuthenticatorType AuthenticatorType { get; set; }
-
     public virtual ICollection<UserOperationClaim> UserOperationClaims { get; set; }
     public virtual ICollection<RefreshToken> RefreshTokens { get; set; }
 
