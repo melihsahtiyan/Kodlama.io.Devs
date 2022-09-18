@@ -8,8 +8,11 @@
 
 	<ItemGroup>
 	  <Compile Remove="Features\Brands\**" />
+	  <Compile Remove="Features\OperationClaims\**" />
 	  <EmbeddedResource Remove="Features\Brands\**" />
+	  <EmbeddedResource Remove="Features\OperationClaims\**" />
 	  <None Remove="Features\Brands\**" />
+	  <None Remove="Features\OperationClaims\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -27,6 +30,11 @@
 	<ItemGroup>
 	  <Folder Include="Features\Languages\Constants\" />
 	  <Folder Include="Features\Technologies\Constants\" />
+	  <Folder Include="Features\Users\Commands\DeleteUser\" />
+	  <Folder Include="Features\Users\Commands\UpdateUser\" />
+	  <Folder Include="Features\Users\Constants\" />
+	  <Folder Include="Features\Users\Models\" />
+	  <Folder Include="Features\Users\Queries\" />
 	</ItemGroup>
 
 </Project>
